@@ -9,7 +9,7 @@ Please choose simulator from target and run the app or build in iOS device.
 
 **Screen 1 Exercise's List**
 
-- You can see the different exercise's from the listview and can see the exercise name and image(optional).Images are loaded using lazy loading and you can see the placeholder image if there is no image exist.
+- You can see the different exercise's from the listview and you can see the exercise name and image(optional).Images are loaded using lazy loading and you can see the placeholder image if there is no image exist.
 
 - You can scroll down tho view all exercise's.
 
@@ -23,5 +23,6 @@ Please choose simulator from target and run the app or build in iOS device.
 
 **Screen 3 Variation's Details**
 
-- When you tap on a variation you can navigate to the variation detail screen where you can see the variation title and description.
+- When you tap on a variation you will navigate to the variation detail screen where you can see the variation title and description.
+- You can go back by tapping on back button.
 
