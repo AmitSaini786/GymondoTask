@@ -7,7 +7,7 @@ Please choose simulator from target and run the app or build in iOS device.
 
 **App funtionality and navigation's through screens**
 
-**Screen 1 Exercise List**
+**Screen 1 Exercise's List**
 
 - You can see the different exercise's from the listview and can see the exercise name and image(optional).Images are loaded using lazy loading and you can see the placeholder image if there is no image exist.
 
