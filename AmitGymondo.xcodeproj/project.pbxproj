@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D4BE3D1F2302BF901666AB0 /* Pods_AssignmentGymondo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A82FC307683A401BFE52EA4 /* Pods_AssignmentGymondo.framework */; };
+		6B3DB2242831BF1E003472AA /* exerciseDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3DB2222831BF1E003472AA /* exerciseDetailsHeader.swift */; };
+		6B3DB2252831BF1E003472AA /* exerciseDetailsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3DB2232831BF1E003472AA /* exerciseDetailsHeader.xib */; };
+		6B3DB228283419F7003472AA /* VariationsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3DB227283419F7003472AA /* VariationsDetailVC.swift */; };
+		6BB8EA35282071BD00546B86 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB8EA34282071BD00546B86 /* Helper.swift */; };
+		6BF198A828213C99005B6BEE /* UITextFiled+ValidateText+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198A728213C99005B6BEE /* UITextFiled+ValidateText+Views.swift */; };
+		6BF198AA28214BDE005B6BEE /* EexercisesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198A928214BDE005B6BEE /* EexercisesTableViewDataSource.swift */; };
+		6BF198AC28215AF1005B6BEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198AB28215AF0005B6BEE /* Constants.swift */; };
+		6BF198AE28217F85005B6BEE /* ExercisesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198AD28217F85005B6BEE /* ExercisesDetails.swift */; };
+		6BF198B02821846B005B6BEE /* ExercisesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198AF2821846B005B6BEE /* ExercisesDetailsVC.swift */; };
+		6BF198B4282189A8005B6BEE /* ExercisDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198B3282189A8005B6BEE /* ExercisDetailsViewModel.swift */; };
+		6BF198B628218C0A005B6BEE /* ExerciseCVViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198B528218C0A005B6BEE /* ExerciseCVViewDataSource.swift */; };
+		6BF198BC28218D08005B6BEE /* CVExerciseImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF198BA28218D08005B6BEE /* CVExerciseImageCell.swift */; };
+		6BF198BD28218D08005B6BEE /* CVExerciseImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BF198BB28218D08005B6BEE /* CVExerciseImageCell.xib */; };
+		6BFF9A27282016750025521A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A26282016750025521A /* AppDelegate.swift */; };
+		6BFF9A29282016750025521A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A28282016750025521A /* SceneDelegate.swift */; };
+		6BFF9A2E282016750025521A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF9A2C282016750025521A /* Main.storyboard */; };
+		6BFF9A30282016770025521A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF9A2F282016770025521A /* Assets.xcassets */; };
+		6BFF9A33282016770025521A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF9A31282016770025521A /* LaunchScreen.storyboard */; };
+		6BFF9A3E282016770025521A /* AssignmentGymondoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A3D282016770025521A /* AssignmentGymondoTests.swift */; };
+		6BFF9A48282016770025521A /* AssignmentGymondoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A47282016770025521A /* AssignmentGymondoUITests.swift */; };
+		6BFF9A4A282016770025521A /* AssignmentGymondoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A49282016770025521A /* AssignmentGymondoUITestsLaunchTests.swift */; };
+		6BFF9A59282027F20025521A /* HomeExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A58282027F20025521A /* HomeExercisesVC.swift */; };
+		6BFF9A5E2820293C0025521A /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A5D2820293C0025521A /* ExercisesViewModel.swift */; };
+		6BFF9A60282029BE0025521A /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A5F282029BE0025521A /* Exercises.swift */; };
+		6BFF9A6228202BFB0025521A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A6128202BFB0025521A /* APIService.swift */; };
+		6BFF9A6628202EAB0025521A /* tblExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF9A6428202EAB0025521A /* tblExerciseCell.swift */; };
+		6BFF9A6728202EAB0025521A /* tblExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF9A6528202EAB0025521A /* tblExerciseCell.xib */; };
+		A3AD92D88C25025098D4194B /* Pods_AssignmentGymondo_AssignmentGymondoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E8FE54DF5702AC56994A64 /* Pods_AssignmentGymondo_AssignmentGymondoUITests.framework */; };
+		BC462B59C4831A587BB96B84 /* Pods_AssignmentGymondoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211360E8774A1ACC52960B7B /* Pods_AssignmentGymondoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BFF9A3A282016770025521A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BFF9A1B282016750025521A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BFF9A22282016750025521A;
+			remoteInfo = AssignmentGymondo;
+		};
+		6BFF9A44282016770025521A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BFF9A1B282016750025521A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BFF9A22282016750025521A;
+			remoteInfo = AssignmentGymondo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		211360E8774A1ACC52960B7B /* Pods_AssignmentGymondoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssignmentGymondoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A82FC307683A401BFE52EA4 /* Pods_AssignmentGymondo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssignmentGymondo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		330F403F9F1FCAF136AEE996 /* Pods-AssignmentGymondo-AssignmentGymondoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentGymondo-AssignmentGymondoUITests.release.xcconfig"; path = "Target Support Files/Pods-AssignmentGymondo-AssignmentGymondoUITests/Pods-AssignmentGymondo-AssignmentGymondoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34E8FE54DF5702AC56994A64 /* Pods_AssignmentGymondo_AssignmentGymondoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssignmentGymondo_AssignmentGymondoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3DB2222831BF1E003472AA /* exerciseDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseDetailsHeader.swift; sourceTree = "<group>"; };
+		6B3DB2232831BF1E003472AA /* exerciseDetailsHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = exerciseDetailsHeader.xib; sourceTree = "<group>"; };
+		6B3DB227283419F7003472AA /* VariationsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationsDetailVC.swift; sourceTree = "<group>"; };
+		6BB8EA34282071BD00546B86 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		6BF198A728213C99005B6BEE /* UITextFiled+ValidateText+Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFiled+ValidateText+Views.swift"; sourceTree = "<group>"; };
+		6BF198A928214BDE005B6BEE /* EexercisesTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EexercisesTableViewDataSource.swift; sourceTree = "<group>"; };
+		6BF198AB28215AF0005B6BEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6BF198AD28217F85005B6BEE /* ExercisesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesDetails.swift; sourceTree = "<group>"; };
+		6BF198AF2821846B005B6BEE /* ExercisesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesDetailsVC.swift; sourceTree = "<group>"; };
+		6BF198B3282189A8005B6BEE /* ExercisDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisDetailsViewModel.swift; sourceTree = "<group>"; };
+		6BF198B528218C0A005B6BEE /* ExerciseCVViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCVViewDataSource.swift; sourceTree = "<group>"; };
+		6BF198BA28218D08005B6BEE /* CVExerciseImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVExerciseImageCell.swift; sourceTree = "<group>"; };
+		6BF198BB28218D08005B6BEE /* CVExerciseImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVExerciseImageCell.xib; sourceTree = "<group>"; };
+		6BFF9A23282016750025521A /* AssignmentGymondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentGymondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFF9A26282016750025521A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BFF9A28282016750025521A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6BFF9A2D282016750025521A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BFF9A2F282016770025521A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BFF9A32282016770025521A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BFF9A34282016770025521A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BFF9A39282016770025521A /* AssignmentGymondoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentGymondoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFF9A3D282016770025521A /* AssignmentGymondoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGymondoTests.swift; sourceTree = "<group>"; };
+		6BFF9A43282016770025521A /* AssignmentGymondoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentGymondoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFF9A47282016770025521A /* AssignmentGymondoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGymondoUITests.swift; sourceTree = "<group>"; };
+		6BFF9A49282016770025521A /* AssignmentGymondoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentGymondoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6BFF9A58282027F20025521A /* HomeExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExercisesVC.swift; sourceTree = "<group>"; };
+		6BFF9A5D2820293C0025521A /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
+		6BFF9A5F282029BE0025521A /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
+		6BFF9A6128202BFB0025521A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		6BFF9A6428202EAB0025521A /* tblExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblExerciseCell.swift; sourceTree = "<group>"; };
+		6BFF9A6528202EAB0025521A /* tblExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tblExerciseCell.xib; sourceTree = "<group>"; };
+		7A86338B0AD13FF1AE327D2A /* Pods-AssignmentGymondoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentGymondoTests.release.xcconfig"; path = "Target Support Files/Pods-AssignmentGymondoTests/Pods-AssignmentGymondoTests.release.xcconfig"; sourceTree = "<group>"; };
+		8652AC472A3F9CA1F1F80D82 /* Pods-AssignmentGymondoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentGymondoTests.debug.xcconfig"; path = "Target Support Files/Pods-AssignmentGymondoTests/Pods-AssignmentGymondoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DE5B0FDCAFA6BE2DE6030B6 /* Pods-AssignmentGymondo-AssignmentGymondoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentGymondo-AssignmentGymondoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AssignmentGymondo-AssignmentGymondoUITests/Pods-AssignmentGymondo-AssignmentGymondoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FF4373D19F355824D1DC88D /* Pods-AssignmentGymondo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentGymondo.debug.xcconfig"; path = "Target Support Files/Pods-AssignmentGymondo/Pods-AssignmentGymondo.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B761FC74A10A21AFF140FA /* Pods-AssignmentGymondo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentGymondo.release.xcconfig"; path = "Target Support Files/Pods-AssignmentGymondo/Pods-AssignmentGymondo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BFF9A20282016750025521A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D4BE3D1F2302BF901666AB0 /* Pods_AssignmentGymondo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFF9A36282016770025521A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC462B59C4831A587BB96B84 /* Pods_AssignmentGymondoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFF9A40282016770025521A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AD92D88C25025098D4194B /* Pods_AssignmentGymondo_AssignmentGymondoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B3DB2262831BF25003472AA /* ExercisesHeader */ = {
+			isa = PBXGroup;
+			children = (
+				6B3DB2222831BF1E003472AA /* exerciseDetailsHeader.swift */,
+				6B3DB2232831BF1E003472AA /* exerciseDetailsHeader.xib */,
+			);
+			path = ExercisesHeader;
+			sourceTree = "<group>";
+		};
+		6BB8EA33282071B300546B86 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6BF198A728213C99005B6BEE /* UITextFiled+ValidateText+Views.swift */,
+				6BB8EA34282071BD00546B86 /* Helper.swift */,
+				6BF198AB28215AF0005B6BEE /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6BF198B128218662005B6BEE /* ExercisesVM */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A5D2820293C0025521A /* ExercisesViewModel.swift */,
+				6BF198A928214BDE005B6BEE /* EexercisesTableViewDataSource.swift */,
+			);
+			path = ExercisesVM;
+			sourceTree = "<group>";
+		};
+		6BF198B228218683005B6BEE /* ExcersiceDetailsVM */ = {
+			isa = PBXGroup;
+			children = (
+				6BF198B3282189A8005B6BEE /* ExercisDetailsViewModel.swift */,
+				6BF198B528218C0A005B6BEE /* ExerciseCVViewDataSource.swift */,
+			);
+			path = ExcersiceDetailsVM;
+			sourceTree = "<group>";
+		};
+		6BF198B828218CB8005B6BEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BF198B928218CCE005B6BEE /* CollectionViewCell */,
+				6BFF9A6328202E6D0025521A /* TableViewCells */,
+				6B3DB2262831BF25003472AA /* ExercisesHeader */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BF198B928218CCE005B6BEE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6BF198BA28218D08005B6BEE /* CVExerciseImageCell.swift */,
+				6BF198BB28218D08005B6BEE /* CVExerciseImageCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		6BFF9A1A282016750025521A = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A25282016750025521A /* AssignmentGymondo */,
+				6BFF9A3C282016770025521A /* AssignmentGymondoTests */,
+				6BFF9A46282016770025521A /* AssignmentGymondoUITests */,
+				6BFF9A24282016750025521A /* Products */,
+				AB3D27D786737529FBE5F865 /* Pods */,
+				935D68D461E8BBD245618543 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BFF9A24282016750025521A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A23282016750025521A /* AssignmentGymondo.app */,
+				6BFF9A39282016770025521A /* AssignmentGymondoTests.xctest */,
+				6BFF9A43282016770025521A /* AssignmentGymondoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BFF9A25282016750025521A /* AssignmentGymondo */ = {
+			isa = PBXGroup;
+			children = (
+				6BB8EA33282071B300546B86 /* Helpers */,
+				6BFF9A5C282029040025521A /* APIService */,
+				6BF198B828218CB8005B6BEE /* View */,
+				6BFF9A5A282028A90025521A /* viewModels */,
+				6BFF9A5B282028DA0025521A /* Models */,
+				6BFF9A572820278A0025521A /* Controllers */,
+				6BFF9A562820276B0025521A /* Common */,
+				6BFF9A2C282016750025521A /* Main.storyboard */,
+				6BFF9A2F282016770025521A /* Assets.xcassets */,
+				6BFF9A31282016770025521A /* LaunchScreen.storyboard */,
+				6BFF9A34282016770025521A /* Info.plist */,
+			);
+			path = AssignmentGymondo;
+			sourceTree = "<group>";
+		};
+		6BFF9A3C282016770025521A /* AssignmentGymondoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A3D282016770025521A /* AssignmentGymondoTests.swift */,
+			);
+			path = AssignmentGymondoTests;
+			sourceTree = "<group>";
+		};
+		6BFF9A46282016770025521A /* AssignmentGymondoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A47282016770025521A /* AssignmentGymondoUITests.swift */,
+				6BFF9A49282016770025521A /* AssignmentGymondoUITestsLaunchTests.swift */,
+			);
+			path = AssignmentGymondoUITests;
+			sourceTree = "<group>";
+		};
+		6BFF9A562820276B0025521A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A26282016750025521A /* AppDelegate.swift */,
+				6BFF9A28282016750025521A /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6BFF9A572820278A0025521A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A58282027F20025521A /* HomeExercisesVC.swift */,
+				6BF198AF2821846B005B6BEE /* ExercisesDetailsVC.swift */,
+				6B3DB227283419F7003472AA /* VariationsDetailVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6BFF9A5A282028A90025521A /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6BF198B128218662005B6BEE /* ExercisesVM */,
+				6BF198B228218683005B6BEE /* ExcersiceDetailsVM */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		6BFF9A5B282028DA0025521A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A5F282029BE0025521A /* Exercises.swift */,
+				6BF198AD28217F85005B6BEE /* ExercisesDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BFF9A5C282029040025521A /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A6128202BFB0025521A /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		6BFF9A6328202E6D0025521A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6BFF9A6428202EAB0025521A /* tblExerciseCell.swift */,
+				6BFF9A6528202EAB0025521A /* tblExerciseCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		935D68D461E8BBD245618543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A82FC307683A401BFE52EA4 /* Pods_AssignmentGymondo.framework */,
+				34E8FE54DF5702AC56994A64 /* Pods_AssignmentGymondo_AssignmentGymondoUITests.framework */,
+				211360E8774A1ACC52960B7B /* Pods_AssignmentGymondoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3D27D786737529FBE5F865 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FF4373D19F355824D1DC88D /* Pods-AssignmentGymondo.debug.xcconfig */,
+				F7B761FC74A10A21AFF140FA /* Pods-AssignmentGymondo.release.xcconfig */,
+				8DE5B0FDCAFA6BE2DE6030B6 /* Pods-AssignmentGymondo-AssignmentGymondoUITests.debug.xcconfig */,
+				330F403F9F1FCAF136AEE996 /* Pods-AssignmentGymondo-AssignmentGymondoUITests.release.xcconfig */,
+				8652AC472A3F9CA1F1F80D82 /* Pods-AssignmentGymondoTests.debug.xcconfig */,
+				7A86338B0AD13FF1AE327D2A /* Pods-AssignmentGymondoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BFF9A22282016750025521A /* AssignmentGymondo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BFF9A4D282016770025521A /* Build configuration list for PBXNativeTarget "AssignmentGymondo" */;
+			buildPhases = (
+				760B832FD7E08762FA5717B9 /* [CP] Check Pods Manifest.lock */,
+				6BFF9A1F282016750025521A /* Sources */,
+				6BFF9A20282016750025521A /* Frameworks */,
+				6BFF9A21282016750025521A /* Resources */,
+				E7BDC20D6AAF3FA1FD553AB5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssignmentGymondo;
+			productName = AssignmentGymondo;
+			productReference = 6BFF9A23282016750025521A /* AssignmentGymondo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BFF9A38282016770025521A /* AssignmentGymondoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BFF9A50282016770025521A /* Build configuration list for PBXNativeTarget "AssignmentGymondoTests" */;
+			buildPhases = (
+				620845149371EF7D72A7EBFB /* [CP] Check Pods Manifest.lock */,
+				6BFF9A35282016770025521A /* Sources */,
+				6BFF9A36282016770025521A /* Frameworks */,
+				6BFF9A37282016770025521A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BFF9A3B282016770025521A /* PBXTargetDependency */,
+			);
+			name = AssignmentGymondoTests;
+			productName = AssignmentGymondoTests;
+			productReference = 6BFF9A39282016770025521A /* AssignmentGymondoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BFF9A42282016770025521A /* AssignmentGymondoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BFF9A53282016770025521A /* Build configuration list for PBXNativeTarget "AssignmentGymondoUITests" */;
+			buildPhases = (
+				6816C153ACA975487523F020 /* [CP] Check Pods Manifest.lock */,
+				6BFF9A3F282016770025521A /* Sources */,
+				6BFF9A40282016770025521A /* Frameworks */,
+				6BFF9A41282016770025521A /* Resources */,
+				8AD34D75B340EE83B3FC631A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BFF9A45282016770025521A /* PBXTargetDependency */,
+			);
+			name = AssignmentGymondoUITests;
+			productName = AssignmentGymondoUITests;
+			productReference = 6BFF9A43282016770025521A /* AssignmentGymondoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BFF9A1B282016750025521A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6BFF9A22282016750025521A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6BFF9A38282016770025521A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6BFF9A22282016750025521A;
+					};
+					6BFF9A42282016770025521A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6BFF9A22282016750025521A;
+					};
+				};
+			};
+			buildConfigurationList = 6BFF9A1E282016750025521A /* Build configuration list for PBXProject "AssignmentGymondo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BFF9A1A282016750025521A;
+			productRefGroup = 6BFF9A24282016750025521A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BFF9A22282016750025521A /* AssignmentGymondo */,
+				6BFF9A38282016770025521A /* AssignmentGymondoTests */,
+				6BFF9A42282016770025521A /* AssignmentGymondoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BFF9A21282016750025521A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFF9A33282016770025521A /* LaunchScreen.storyboard in Resources */,
+				6BF198BD28218D08005B6BEE /* CVExerciseImageCell.xib in Resources */,
+				6BFF9A30282016770025521A /* Assets.xcassets in Resources */,
+				6B3DB2252831BF1E003472AA /* exerciseDetailsHeader.xib in Resources */,
+				6BFF9A6728202EAB0025521A /* tblExerciseCell.xib in Resources */,
+				6BFF9A2E282016750025521A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFF9A37282016770025521A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFF9A41282016770025521A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		620845149371EF7D72A7EBFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AssignmentGymondoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6816C153ACA975487523F020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AssignmentGymondo-AssignmentGymondoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760B832FD7E08762FA5717B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AssignmentGymondo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD34D75B340EE83B3FC631A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssignmentGymondo-AssignmentGymondoUITests/Pods-AssignmentGymondo-AssignmentGymondoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssignmentGymondo-AssignmentGymondoUITests/Pods-AssignmentGymondo-AssignmentGymondoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssignmentGymondo-AssignmentGymondoUITests/Pods-AssignmentGymondo-AssignmentGymondoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7BDC20D6AAF3FA1FD553AB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssignmentGymondo/Pods-AssignmentGymondo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssignmentGymondo/Pods-AssignmentGymondo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssignmentGymondo/Pods-AssignmentGymondo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BFF9A1F282016750025521A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFF9A59282027F20025521A /* HomeExercisesVC.swift in Sources */,
+				6BF198AC28215AF1005B6BEE /* Constants.swift in Sources */,
+				6BF198AE28217F85005B6BEE /* ExercisesDetails.swift in Sources */,
+				6BFF9A27282016750025521A /* AppDelegate.swift in Sources */,
+				6BF198AA28214BDE005B6BEE /* EexercisesTableViewDataSource.swift in Sources */,
+				6BFF9A60282029BE0025521A /* Exercises.swift in Sources */,
+				6BFF9A5E2820293C0025521A /* ExercisesViewModel.swift in Sources */,
+				6BFF9A6228202BFB0025521A /* APIService.swift in Sources */,
+				6BF198BC28218D08005B6BEE /* CVExerciseImageCell.swift in Sources */,
+				6BF198A828213C99005B6BEE /* UITextFiled+ValidateText+Views.swift in Sources */,
+				6BFF9A6628202EAB0025521A /* tblExerciseCell.swift in Sources */,
+				6B3DB2242831BF1E003472AA /* exerciseDetailsHeader.swift in Sources */,
+				6BF198B628218C0A005B6BEE /* ExerciseCVViewDataSource.swift in Sources */,
+				6B3DB228283419F7003472AA /* VariationsDetailVC.swift in Sources */,
+				6BFF9A29282016750025521A /* SceneDelegate.swift in Sources */,
+				6BF198B02821846B005B6BEE /* ExercisesDetailsVC.swift in Sources */,
+				6BB8EA35282071BD00546B86 /* Helper.swift in Sources */,
+				6BF198B4282189A8005B6BEE /* ExercisDetailsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFF9A35282016770025521A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFF9A3E282016770025521A /* AssignmentGymondoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BFF9A3F282016770025521A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFF9A48282016770025521A /* AssignmentGymondoUITests.swift in Sources */,
+				6BFF9A4A282016770025521A /* AssignmentGymondoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BFF9A3B282016770025521A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BFF9A22282016750025521A /* AssignmentGymondo */;
+			targetProxy = 6BFF9A3A282016770025521A /* PBXContainerItemProxy */;
+		};
+		6BFF9A45282016770025521A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BFF9A22282016750025521A /* AssignmentGymondo */;
+			targetProxy = 6BFF9A44282016770025521A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BFF9A2C282016750025521A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BFF9A2D282016750025521A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BFF9A31282016770025521A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BFF9A32282016770025521A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BFF9A4B282016770025521A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BFF9A4C282016770025521A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BFF9A4E282016770025521A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF4373D19F355824D1DC88D /* Pods-AssignmentGymondo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssignmentGymondo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.AssignmentGymondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6BFF9A4F282016770025521A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B761FC74A10A21AFF140FA /* Pods-AssignmentGymondo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssignmentGymondo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.AssignmentGymondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6BFF9A51282016770025521A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8652AC472A3F9CA1F1F80D82 /* Pods-AssignmentGymondoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.AssignmentGymondoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignmentGymondo.app/AssignmentGymondo";
+			};
+			name = Debug;
+		};
+		6BFF9A52282016770025521A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A86338B0AD13FF1AE327D2A /* Pods-AssignmentGymondoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.AssignmentGymondoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssignmentGymondo.app/AssignmentGymondo";
+			};
+			name = Release;
+		};
+		6BFF9A54282016770025521A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE5B0FDCAFA6BE2DE6030B6 /* Pods-AssignmentGymondo-AssignmentGymondoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.AssignmentGymondoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssignmentGymondo;
+			};
+			name = Debug;
+		};
+		6BFF9A55282016770025521A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330F403F9F1FCAF136AEE996 /* Pods-AssignmentGymondo-AssignmentGymondoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.AssignmentGymondoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssignmentGymondo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BFF9A1E282016750025521A /* Build configuration list for PBXProject "AssignmentGymondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BFF9A4B282016770025521A /* Debug */,
+				6BFF9A4C282016770025521A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BFF9A4D282016770025521A /* Build configuration list for PBXNativeTarget "AssignmentGymondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BFF9A4E282016770025521A /* Debug */,
+				6BFF9A4F282016770025521A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BFF9A50282016770025521A /* Build configuration list for PBXNativeTarget "AssignmentGymondoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BFF9A51282016770025521A /* Debug */,
+				6BFF9A52282016770025521A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BFF9A53282016770025521A /* Build configuration list for PBXNativeTarget "AssignmentGymondoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BFF9A54282016770025521A /* Debug */,
+				6BFF9A55282016770025521A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BFF9A1B282016750025521A /* Project object */;
+}

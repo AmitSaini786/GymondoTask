@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CVExerciseImageCell" id="gTV-IL-0wX" customClass="CVExerciseImageCell" customModule="AssignmentGymondo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="141" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LoF-Mq-a5P" customClass="DesignableImageView" customModule="AssignmentGymondo" customModuleProvider="target">
+                        <rect key="frame" x="15" y="10" width="116" height="102"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="50"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBB-nu-UXg">
+                        <rect key="frame" x="15" y="15" width="111" height="92"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" red="0.36470589040000001" green="0.32549020649999999" blue="0.72941178080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FBB-nu-UXg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="4KK-9X-6J8"/>
+                <constraint firstItem="FBB-nu-UXg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="E5I-WI-ExL"/>
+                <constraint firstAttribute="trailing" secondItem="FBB-nu-UXg" secondAttribute="trailing" constant="15" id="JHF-JW-ypE"/>
+                <constraint firstAttribute="bottom" secondItem="FBB-nu-UXg" secondAttribute="bottom" constant="15" id="JJO-s7-qP6"/>
+                <constraint firstItem="LoF-Mq-a5P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="K6c-Wh-1tj"/>
+                <constraint firstItem="LoF-Mq-a5P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="PeH-fS-0jz"/>
+                <constraint firstAttribute="trailing" secondItem="LoF-Mq-a5P" secondAttribute="trailing" constant="10" id="VLc-al-6ec"/>
+                <constraint firstAttribute="bottom" secondItem="LoF-Mq-a5P" secondAttribute="bottom" constant="10" id="iLt-x1-zik"/>
+            </constraints>
+            <size key="customSize" width="141" height="122"/>
+            <connections>
+                <outlet property="imgExercise" destination="LoF-Mq-a5P" id="dZf-DC-hq3"/>
+                <outlet property="lblVariations" destination="FBB-nu-UXg" id="AAW-ZC-U0C"/>
+            </connections>
+            <point key="canvasLocation" x="203.62318840579712" y="97.767857142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
