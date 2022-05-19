@@ -23,5 +23,5 @@ Please choose simulator from target and run the app or build in iOS device.
 
 **Screen 3 Variation's Details**
 
--When you tap on a variation you can navigate to the variation detail screen where you can see the variation title and description.
+- When you tap on a variation you can navigate to the variation detail screen where you can see the variation title and description.
 
